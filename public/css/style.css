@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+/* navbar */
+.navbar{
+    height : 5rem;
+    
+}
+.navbar-brand img{
+    width: 7.5rem;
+    height: auto;
+    
+}
+/* Footer */
+.f-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    height: 8rem;
+    background-color: #ebebeb;
+}
+.f-info-socialLinks {
+    margin-right: 20px;
+}
+.f-info-links {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    
+    text-decoration: underline;
+}
+.f-info-socialLinks :hover {
+    text-shadow: 2px 2px 5px white;
+    cursor: pointer;
+}
