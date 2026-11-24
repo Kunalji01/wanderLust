@@ -1,32 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderLust</title>
-</head>
-<body>
-    <h3>Create a new Listing</h3>
-    <form method="post" action="/listings">
-        <input name="title" placeholder="Enter your Title">
-        <br>
-        <br>
-        <textarea name="description" placeholder="Enter your Description"></textarea>
-        <br>
-        <br>
-        <input name="image" placeholder="Add img link">
-        <br>
-        <br>
-        <input name="price" placeholder="Enter your Price">
-        <br>
-        <br>
-        <input name="location" placeholder="Enter your Location">
-        <br>
-        <br>
-        <input name="country" placeholder="Enter your Country">
-        <br>
-        <br>
-        <button>Submit</button>
-    </form>
-</body>
-</html>
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <br>
+                <h3>Create a New Listing</h3>
+                <form method="post" action="/listings">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input name="title" placeholder="Enter your Title" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="description" placeholder="Enter your Description"
+                            class="form-control"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image</label>
+                        <input name="image" placeholder="Add img link" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input name="price" placeholder="Enter your Price" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input name="location" placeholder="Enter your Location" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="country" placeholder="Enter your Country" class="form-control">
+                    </div>
+                    <br>
+                    <button class="btn btn-dark">Submit</button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
