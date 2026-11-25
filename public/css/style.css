@@ -71,3 +71,18 @@ body{
 .card-img-top:hover{
     opacity: 0.5 !important;
 }
+
+.btns{
+    display: flex;
+    
+}
+.card-img{
+    height: 20rem;
+}
+.card-img:hover{
+    opacity: 0.5 !important;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
